@@ -30,6 +30,8 @@ layout: null
             <itunes:name>{{ site.podcast_owner }}</itunes:name>
             <itunes:email>{{ site.podcast_email }}</itunes:email>
         </itunes:owner>
+        <itunes:block>no</itunes:block>
+        <itunes:category text="{{ site.podcast_category }}"/>
         <managingEditor>{{ site.podcast_email }} ({{ site.podcast_owner }})</managingEditor>
         <itunes:subtitle>{{ site.podcast_subtitle }}</itunes:subtitle>
         <image>
@@ -37,7 +39,6 @@ layout: null
             <url>{{ site.url }}{{ site.podcast_album_art }}</url>
             <link>{{ site.url }}</link>
         </image>
-        <itunes:category text="{{ site.podcast_category }}"/>
 {% for ep in site.posts %}
         <item>
             <title>{{ ep.title }}</title>
