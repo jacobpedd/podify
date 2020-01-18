@@ -11,18 +11,18 @@
 
     <channel>
         <title>Podify</title>
-        <atom:link href="http://localhost:4000/feed/podcast" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:4000/index.html" rel="self" type="application/rss+xml" />
         <link>http://localhost:4000</link>
         <description>New episode from a different podcast every week.</description>
-        <lastBuildDate>Sat, 18 Jan 2020 13:03:59 -0600</lastBuildDate>
+        <lastBuildDate>Sat, 18 Jan 2020 13:53:15 -0600</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <generator>http://jekyllrb.com</generator>
         <itunes:summary>New episode from a different podcast every week.</itunes:summary>
-        <itunes:author>Jacob Peddicord and Tim Roty</itunes:author>
+        <itunes:author>Jacob, Tim, and Dom</itunes:author>
         <itunes:explicit>no</itunes:explicit>
-        <itunes:image href="http://localhost:4000/img/art.jpg" />
+        <itunes:image href="http://localhost:4000/img/art.png" />
         <itunes:owner>
             <itunes:name>Podify</itunes:name>
             <itunes:email>podify@gmail.com</itunes:email>
@@ -31,14 +31,29 @@
         <itunes:subtitle>Find new podcasts you'll love.</itunes:subtitle>
         <image>
             <title>Podify</title>
-            <url>http://localhost:4000/img/art.jpg</url>
+            <url>http://localhost:4000/img/art.png</url>
             <link>http://localhost:4000</link>
         </image>
         <itunes:category text="General">
         </itunes:category>
-
-    <li>post.title</li>
-
+        <item>
+            <title><![CDATA[Roty with The Brodies - Ethan and Brett]]></title>
+            <description><![CDATA[<p>On the first ever dual guest episode, Ethan and Brett are interviewed. In this lighthearted and fun spirited episode, the three of us talk sports, die, college, hobbies, and more. Listen for an interesting twist on the conventional Roty with the Brodies.</p>
+        ]]>    </description>
+            <link>https://anchor.fm/rotyradio/episodes/Roty-with-The-Brodies---Ethan-and-Brett-e9skg6</link>
+            <guid isPermaLink="false">d04e1666-dc5e-4577-9fec-beef28104f32</guid>
+            <dc:creator><![CDATA[Tim R.]]></dc:creator>
+            <pubDate>Sun, 29 Dec 2019 02:05:03 GMT</pubDate>
+            <enclosure url="https://anchor.fm/s/68c27b4/podcast/play/9375686/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-11-29%2F41130027-48000-2-72162fe1c3b2e.mp3" length="69771088" type="audio/mpeg"/>
+            <itunes:summary>&lt;p&gt;On the first ever dual guest episode, Ethan and Brett are interviewed. In this lighthearted and fun spirited episode, the three of us talk sports, die, college, hobbies, and more. Listen for an interesting twist on the conventional Roty with the Brodies.&lt;/p&gt;
+            </itunes:summary>
+            <itunes:explicit>No</itunes:explicit>
+            <itunes:duration>3488</itunes:duration>
+            <itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/998485/998485-1553877656100-9b43ccdaf88aa.jpg"/>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>2</itunes:episode>
+            <itunes:episodeType>full</itunes:episodeType>
+        </item>
 
         <item>
             <title>361: A Button in the Thumb Shelf</title>
@@ -71,8 +86,8 @@
 ]]></itunes:subtitle>
             <itunes:summary><![CDATA[
 ]]></itunes:summary>
-            <itunes:author>Jacob Peddicord and Tim Roty</itunes:author>
-            <itunes:image href="http://localhost:4000/img/art.jpg" />
+            <itunes:author>Jacob, Tim, and Dom</itunes:author>
+            <itunes:image href="http://localhost:4000/img/art.png" />
             <itunes:explicit>no</itunes:explicit>
             <itunes:duration>02:12:27</itunes:duration>
         </item>
