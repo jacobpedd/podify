@@ -22,7 +22,6 @@ layout: null
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <generator>http://jekyllrb.com</generator>
-        <itunes:category>Other</itunes:category>
         <itunes:summary>{{ site.podcast_summary }}</itunes:summary>
         <itunes:author>{{ site.podcast_author }}</itunes:author>
         <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
@@ -38,21 +37,13 @@ layout: null
             <url>{{ site.url }}{{ site.podcast_album_art }}</url>
             <link>{{ site.url }}</link>
         </image>
-        <itunes:category text="{{ site.podcast_category }}">
-        </itunes:category>
+        <itunes:category text="{{ site.podcast_category }}"/>
 {% for ep in site.posts %}
         <item>
             <title>{{ ep.title }}</title>
             <link>{{ site.url }}{{ ep.url }}</link>
             <comments>{{ site.url }}{{ ep.url }}#comments</comments>
             <pubDate>{{ ep.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
-            <dc:creator><![CDATA[{{ site.author | cdata_escape }}]]></dc:creator>
-{% for category in ep.categories %}
-            <category><![CDATA[{{ category | cdata_escape }}]]></category>
-{% endfor %}
-{% for category in ep.tags %}
-            <category><![CDATA[{{ category | cdata_escape }}]]></category>
-{% endfor %}
             <guid isPermaLink="{% if ep.podcast_guid %}false{% else %}true{% endif %}">{{ site.url }}{% if ep.podcast_guid %}/{{ ep.podcast_guid }}{% else %}{{ ep.url }}{% endif %}</guid>
             <description>
                 <![CDATA[{{ ep.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
