@@ -31,7 +31,7 @@ layout: null
             <itunes:email>{{ site.podcast_email }}</itunes:email>
         </itunes:owner>
         <itunes:block>no</itunes:block>
-        <itunes:category text="{{ site.podcast_category }}"/>
+        <itunes:category text="Technology"/>
         <managingEditor>{{ site.podcast_email }} ({{ site.podcast_owner }})</managingEditor>
         <itunes:subtitle>{{ site.podcast_subtitle }}</itunes:subtitle>
         <image>

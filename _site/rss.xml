@@ -14,7 +14,7 @@
         <atom:link href="http://localhost:4000/index.html" rel="self" type="application/rss+xml" />
         <link>http://localhost:4000</link>
         <description>New episode from a different podcast every week.</description>
-        <lastBuildDate>Sat, 18 Jan 2020 16:43:38 -0600</lastBuildDate>
+        <lastBuildDate>Sat, 18 Jan 2020 16:47:20 -0600</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
@@ -28,7 +28,7 @@
             <itunes:email>podify@gmail.com</itunes:email>
         </itunes:owner>
         <itunes:block>no</itunes:block>
-        <itunes:category text="General"/>
+        <itunes:category text="Technology"/>
         <managingEditor>podify@gmail.com (Podify)</managingEditor>
         <itunes:subtitle>Find new podcasts you'll love.</itunes:subtitle>
         <image>
