@@ -9,7 +9,7 @@ import feedparser
 # podcast_length: 13654375
 
 def main():
-    d = feedparser.parse('https://anchor.fm/s/68c27b4/podcast/rss')
+    d = feedparser.parse('http://sellingthecouch.libsyn.com/rss')
     e = d.entries[0]
     print(e.title)
     print("\n")  # 2 newlines
