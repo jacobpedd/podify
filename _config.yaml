@@ -1,12 +1,13 @@
 name: My Jekyll Website
+url: https://podify.onrender.com
 podcast_url: https://podify.onrender.com/rss
-podcast_album_art: /img/art.jpg
+podcast_album_art: /img/art.png
 podcast_title: Podify
 podcast_owner: Podify
 podcast_email: podify@gmail.com
 podcast_category: General
 podcast_explicit: "no"
-podcast_author: Jacob Peddicord and Tim Roty
+podcast_author: Jacob, Tim, and Dom
 podcast_description: New episode from a different podcast every week.
 podcast_summary: New episode from a different podcast every week.
 podcast_subtitle: Find new podcasts you'll love.
