@@ -1,12 +1,12 @@
 // Bootstrap overrides for this template
 .bg-primary {
-    background: $theme-primary;
-    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
-    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+    background: #1f1b1b;
+    background: -webkit-linear-gradient(#1f1b1b, darken(#1f1b1b, 5%));
+    background: linear-gradient(#1f1b1b, darken(#1f1b1b, 5%));
 }
 
 .text-primary {
-    color: $theme-primary;
+    color: white;
 }
 
 .no-gutter > [class*='col-'] {
@@ -36,4 +36,10 @@
 .btn-xl {
     font-size: 11px;
     padding: 15px 45px;
+}
+
+.download{
+    //background-image: url('../img/bg.png');
+   // background-size: cover;
+    background-color: #A4e3ba;
 }
