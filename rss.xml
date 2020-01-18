@@ -37,8 +37,7 @@ layout: null
             <url>{{ site.url }}{{ site.podcast_album_art }}</url>
             <link>{{ site.url }}</link>
         </image>
-        <itunes:category text="{{ site.podcast_category }}">
-        </itunes:category>
+        <itunes:category text="{{ site.podcast_category }}"/>
 {% for ep in site.posts %}
         <item>
             <title>{{ ep.title }}</title>
