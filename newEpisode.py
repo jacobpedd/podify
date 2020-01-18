@@ -1,4 +1,5 @@
 import feedparser, csv, random
+from datetime import date as dt
 
 
 # date:   2019-01-18
@@ -28,8 +29,27 @@ def main():
     episode_data['podcast_duration'] = e.itunes_duration
     episode_data['podcast_length'] = e.links[1]['length']
     episode_data['description'] = e.description
+
+    addPost(episode_data)
     
-    print(episode_data)
+def addPost(episode_data):
+
+    today = dt.today()
+    d1 = today.strftime("%Y-%m-%d")
+    f = open("_posts/{}-{}.md".format(d1, episode_data['title']), "w+")
+    f.write("---\n")
+    f.write("layout: null\n")
+    f.write('title: "{}"\n'.format(episode_data['title']))
+    f.write("date: {}\n".format(today.strftime("%Y-%m-%d")))
+    f.write("permalink: {}\n".format(episode_data['permalink']))
+    f.write("podcast_link: {}\n".format(episode_data['podcast_link']))
+    f.write("podcast_duration: {}\n".format(episode_data['podcast_duration']))
+    f.write("podcast_length: {}\n".format(episode_data['podcast_length']))
+    f.write("---\n")
+    f.write(episode_data['description'])
+    f.close()
+
+
 
 if __name__ == "__main__":
   main()
