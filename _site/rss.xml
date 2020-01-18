@@ -14,7 +14,7 @@
         <atom:link href="http://localhost:4000/index.html" rel="self" type="application/rss+xml" />
         <link>http://localhost:4000</link>
         <description>New episode from a different podcast every week.</description>
-        <lastBuildDate>Sat, 18 Jan 2020 14:43:54 -0600</lastBuildDate>
+        <lastBuildDate>Sat, 18 Jan 2020 14:47:26 -0600</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
@@ -59,7 +59,7 @@
             <title>Perspectives: Human Trafficking</title>
             <link>http://localhost:4000/https:/news.wfsu.org/post/perspectives-human-trafficking-2</link>
             <comments>http://localhost:4000/https:/news.wfsu.org/post/perspectives-human-trafficking-2#comments</comments>
-            <pubDate>Wed, 08 Jan 2020 23:00:00 -0600</pubDate>
+            <pubDate>Sat, 18 Jan 2020 00:00:00 -0600</pubDate>
             <dc:creator><![CDATA[]]></dc:creator>
 
 

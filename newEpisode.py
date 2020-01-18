@@ -31,7 +31,7 @@ def addPost():
     f.write("---\n")
     f.write("layout: null\n")
     f.write('title: "{}"\n'.format(title))
-    f.write("date: {}\n".format(date))
+    f.write("date: {}\n".format(today.strftime("%Y-%m-%d")))
     f.write("permalink: {}\n".format(link))
     f.write("podcast_link: {}\n".format(file))
     f.write("podcast_duration: {}\n".format(duration))
