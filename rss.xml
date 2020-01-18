@@ -22,7 +22,7 @@ layout: null
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <generator>http://jekyllrb.com</generator>
-        <itunes:category>Other</itunes:category>
+        <itunes:category>Podcasting</itunes:category>
         <itunes:summary>{{ site.podcast_summary }}</itunes:summary>
         <itunes:author>{{ site.podcast_author }}</itunes:author>
         <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
