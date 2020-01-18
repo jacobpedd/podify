@@ -1,46 +1,55 @@
-import feedparser
+import feedparser, csv, random
 from datetime import date as dt
 
 
 # date:   2019-01-18
+# title:	Tim Roty Eats His Own Shit: Part II
 # categories: podcast
 # permalink: https: // atp.fm/episodes/361
 # podcast_link: http: // traffic.libsyn.com/atpfm/atp361.mp3
 # podcast_duration: "02:12:27"
 # podcast_length: 13654375
+# description: Time Roty shits into a cup and eats it!
 
 def main():
-    d = feedparser.parse('http://sellingthecouch.libsyn.com/rss')
+    # get a random rss feed from the podcast info file
+    lines = open('rssFeed.txt').read().splitlines()
+    rss_link = random.choice(lines)
+
+    d = feedparser.parse(f'{rss_link.strip()}')
+
+    # latest episode
     e = d.entries[0]
-    print(e.title)
-    print("\n")  # 2 newlines
 
+    episode_data = {}
+    episode_data['title'] = e.title
+    episode_data['date'] = e.published
+    episode_data['permalink'] = e.link
+    episode_data['podcast_link'] = e.links[1]['href']
+    episode_data['podcast_duration'] = e.itunes_duration
+    episode_data['podcast_length'] = e.links[1]['length']
+    episode_data['description'] = e.description
 
-def addPost():
-    title = "Perspectives: Human Trafficking"
-    date = "Thu, 09 Jan 2020 05:00:00 +0000"
-    link = "https://news.wfsu.org/post/perspectives-human-trafficking-2"
-    file = "https://cpa.ds.npr.org/wfsu/audio/2020/01/ps200109_cleaned.mp3"
-    length = "3019"
-    duration = "3019"
-    description = "January is Human Trafficking Awareness Month and multiple local events are planned to spread the word on the pervasiveness of the crime and what can be done to fight it. To discuss the multiple aspects of the issue are: Robin Hassler Thompson, executive director of the Survive and Thrive Advocacy Center; Regina Bernadin with the International Rescue Committee; Michelle Gaines from the Florida Department of Education; and Melissa Wright from Capital City Bank."
+    addPost(episode_data)
+    
+def addPost(episode_data):
 
     today = dt.today()
     d1 = today.strftime("%Y-%m-%d")
-    f = open("_posts/{}-{}.md".format(d1, title), "w+")
+    f = open("_posts/{}-{}.md".format(d1, episode_data['title']), "w+")
     f.write("---\n")
     f.write("layout: null\n")
-    f.write('title: "{}"\n'.format(title))
+    f.write('title: "{}"\n'.format(episode_data['title']))
     f.write("date: {}\n".format(today.strftime("%Y-%m-%d")))
-    f.write("permalink: {}\n".format(link))
-    f.write("podcast_link: {}\n".format(file))
-    f.write("podcast_duration: {}\n".format(duration))
-    f.write("podcast_length: {}\n".format(length))
+    f.write("permalink: {}\n".format(episode_data['permalink']))
+    f.write("podcast_link: {}\n".format(episode_data['podcast_link']))
+    f.write("podcast_duration: {}\n".format(episode_data['podcast_duration']))
+    f.write("podcast_length: {}\n".format(episode_data['podcast_length']))
     f.write("---\n")
-    f.write(description)
+    f.write(episode_data['description'])
     f.close()
 
 
 
 if __name__ == "__main__":
-  addPost()
+  main()
