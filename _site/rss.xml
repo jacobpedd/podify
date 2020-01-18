@@ -14,7 +14,7 @@
         <atom:link href="http://localhost:4000/index.html" rel="self" type="application/rss+xml" />
         <link>http://localhost:4000</link>
         <description>New episode from a different podcast every week.</description>
-        <lastBuildDate>Sat, 18 Jan 2020 15:34:13 -0600</lastBuildDate>
+        <lastBuildDate>Sat, 18 Jan 2020 15:37:00 -0600</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
@@ -42,9 +42,6 @@
             <link>http://localhost:4000/https:/news.wfsu.org/post/perspectives-human-trafficking-2</link>
             <comments>http://localhost:4000/https:/news.wfsu.org/post/perspectives-human-trafficking-2#comments</comments>
             <pubDate>Sat, 18 Jan 2020 00:00:00 -0600</pubDate>
-            <dc:creator><![CDATA[]]></dc:creator>
-
-
             <guid isPermaLink="true">http://localhost:4000/https:/news.wfsu.org/post/perspectives-human-trafficking-2</guid>
             <description>
                 <![CDATA[January is Human Trafficking Awareness Month and multiple local events are planned to spread the word on the pervasiveness of the crime and what can be done to fight it. To discuss the multiple aspects of the issue are: Robin Hassler Thompson, executive director of the Survive and Thrive Advocacy...]]>
@@ -69,9 +66,6 @@
             <link>http://localhost:4000/http:/traffic.libsyn.com/paychecksandbalances/PB_150_Final_011320.mp3</link>
             <comments>http://localhost:4000/http:/traffic.libsyn.com/paychecksandbalances/PB_150_Final_011320.mp3#comments</comments>
             <pubDate>Sat, 18 Jan 2020 00:00:00 -0600</pubDate>
-            <dc:creator><![CDATA[]]></dc:creator>
-
-
             <guid isPermaLink="true">http://localhost:4000/http:/traffic.libsyn.com/paychecksandbalances/PB_150_Final_011320.mp3</guid>
             <description>
                 <![CDATA[Today on the show we welcome Damien Peters! He’s the founder and Chief Product Officer of Wealth Noir and Victoriam Consulting Group. Damien is a former Facebook product manager, MIT alum, MBA, and self-proclaimed “personal finance nerd.” At Wealth Noir, Damien strives to work with you to generate wealth and...]]>
@@ -140,17 +134,6 @@
             <link>http://localhost:4000/https:/atp.fm/episodes/361</link>
             <comments>http://localhost:4000/https:/atp.fm/episodes/361#comments</comments>
             <pubDate>Fri, 18 Jan 2019 00:00:00 -0600</pubDate>
-            <dc:creator><![CDATA[]]></dc:creator>
-
-            <category><![CDATA[podcast]]></category>
-
-
-            <category><![CDATA[tagone]]></category>
-
-            <category><![CDATA[tagtwo]]></category>
-
-            <category><![CDATA[tagthree]]></category>
-
             <guid isPermaLink="true">http://localhost:4000/https:/atp.fm/episodes/361</guid>
             <description>
                 <![CDATA[
