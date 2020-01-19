@@ -3,13 +3,14 @@ from datetime import date as dt
 
 
 # date:   2019-01-18
-# title:	Tim Roty Eats His Own Shit: Part II
+# title:	Podcast finder
 # categories: podcast
 # permalink: https: // atp.fm/episodes/361
 # podcast_link: http: // traffic.libsyn.com/atpfm/atp361.mp3
 # podcast_duration: "02:12:27"
 # podcast_length: 13654375
-# description: Time Roty shits into a cup and eats it!
+# description: Scrubs and gets new podcasts
+
 
 def main():
     # get a random rss feed from the podcast info file
